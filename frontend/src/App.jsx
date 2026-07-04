@@ -4,9 +4,11 @@ import {
   Users, Award, Trophy, Send, Timer, Plus, Coins, 
   MessageSquare, Check, Copy, Sparkles, Play, LogOut, 
   Info, Activity, TrendingUp, UserCheck, ShieldAlert,
-  Home, Settings
+  Home, Settings, Download, Share2
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { toPng } from 'html-to-image';
+
 
 const IPL_FRANCHISES = [
   { name: 'Mumbai Indians', short: 'MI', color: 'from-blue-600 to-blue-800', border: 'border-blue-500' },
@@ -815,6 +817,72 @@ export default function App() {
         alert(response.error);
       }
     });
+  };
+
+  const getFranchiseLogo = (name) => {
+    const item = IPL_FRANCHISES.find(f => f.name === name);
+    const short = item ? item.short : name.slice(0, 3).toUpperCase();
+    let bg = 'bg-slate-700';
+    if (short === 'RCB') bg = 'bg-red-600';
+    else if (short === 'CSK') bg = 'bg-yellow-500 text-black';
+    else if (short === 'MI') bg = 'bg-blue-600';
+    else if (short === 'KKR') bg = 'bg-[#3a225d]';
+    else if (short === 'DC') bg = 'bg-blue-500';
+    else if (short === 'RR') bg = 'bg-pink-600';
+    else if (short === 'SRH') bg = 'bg-orange-600';
+    else if (short === 'GT') bg = 'bg-slate-800';
+    else if (short === 'LSG') bg = 'bg-cyan-600';
+    else if (short === 'PBKS') bg = 'bg-red-700';
+
+    return (
+      <div className={`w-10 h-10 rounded-2xl flex items-center justify-center font-black text-sm text-white ${bg} shadow-md`}>
+        {short}
+      </div>
+    );
+  };
+
+  const downloadSquadCard = () => {
+    const node = document.getElementById('squad-card-capture');
+    if (!node) return;
+    
+    toPng(node, { cacheBust: true, pixelRatio: 2 })
+      .then((dataUrl) => {
+        const link = document.createElement('a');
+        link.download = `${selectedSquadFranchise.replace(/\s+/g, '_')}_squad.png`;
+        link.href = dataUrl;
+        link.click();
+      })
+      .catch((error) => {
+        console.error('Failed to generate image:', error);
+        alert('Failed to save image. Please try again.');
+      });
+  };
+
+  const shareSquadCard = () => {
+    const node = document.getElementById('squad-card-capture');
+    if (!node) return;
+
+    toPng(node, { cacheBust: true, pixelRatio: 2 })
+      .then((dataUrl) => {
+        fetch(dataUrl)
+          .then(res => res.blob())
+          .then(blob => {
+            const file = new File([blob], `${selectedSquadFranchise.replace(/\s+/g, '_')}_squad.png`, { type: "image/png" });
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+              navigator.share({
+                files: [file],
+                title: `${selectedSquadFranchise} Squad Card`,
+                text: `Check out my IPL Auction squad for ${selectedSquadFranchise}!`,
+              }).catch(err => console.log("Error sharing:", err));
+            } else {
+              navigator.clipboard.writeText(window.location.href);
+              alert("Link to the game copied to clipboard! (Native image sharing is not supported in this browser)");
+            }
+          });
+      })
+      .catch((error) => {
+        console.error('Failed to generate shareable image:', error);
+      });
   };
 
   // Leave room / Back to start
@@ -1979,41 +2047,125 @@ export default function App() {
 
                     return (
                       <div>
-                        {/* Summary Metrics */}
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6 text-center text-xs">
-                          <div className="bg-slate-900 border border-pitch-border p-2.5 rounded-lg">
-                            <span className="text-[10px] text-slate-400 font-bold block uppercase mb-0.5">Rating</span>
-                            <span className="font-accent font-black text-pitch-glow text-sm">
-                              {activeSquadRecord.squad.length > 0 
-                                ? (activeSquadRecord.squad.reduce((sum, p) => sum + p.rating, 0) / activeSquadRecord.squad.length).toFixed(1)
-                                : '0'
-                              }
-                            </span>
-                          </div>
-                          
-                          <div className="bg-slate-900 border border-pitch-border p-2.5 rounded-lg">
-                            <span className="text-[10px] text-slate-400 font-bold block uppercase mb-0.5">Stars</span>
-                            <span className="font-accent font-black text-pitch-gold text-sm">
-                              {activeSquadRecord.squad.filter(p => p.rating >= 90).length}
-                            </span>
-                          </div>
+                        {/* Save & Share Action Bar */}
+                        <div className="flex gap-4 mb-6">
+                          <button 
+                            onClick={downloadSquadCard}
+                            className="flex-grow py-2.5 bg-[#27272a] hover:bg-[#3f3f46] text-white border border-[#3f3f46] rounded-xl font-bold text-xs tracking-wider uppercase transition flex items-center justify-center gap-2 active:scale-95 shadow-md"
+                          >
+                            <Download className="w-3.5 h-3.5" /> Save
+                          </button>
+                          <button 
+                            onClick={shareSquadCard}
+                            className="flex-grow py-2.5 bg-[#0066cc] hover:bg-[#0052a3] text-white rounded-xl font-bold text-xs tracking-wider uppercase transition flex items-center justify-center gap-2 active:scale-95 shadow-md shadow-blue-500/10"
+                          >
+                            <Share2 className="w-3.5 h-3.5" /> Share
+                          </button>
+                        </div>
 
-                          <div className="bg-slate-900 border border-pitch-border p-2.5 rounded-lg">
-                            <span className="text-[10px] text-slate-400 font-bold block uppercase mb-0.5">Spent</span>
-                            <span className="font-accent font-black text-pitch-accent text-sm">
-                              ₹{(100.0 - activeSquadRecord.budget).toFixed(2)} Cr
-                            </span>
-                          </div>
+                        {/* Beautiful Squad Card Preview */}
+                        <div className="flex justify-center mb-6">
+                          <div 
+                            id="squad-card-capture" 
+                            className="w-full max-w-sm bg-gradient-to-b from-[#0f111a] to-[#05060a] border border-[#1f2235] rounded-3xl p-6 shadow-2xl text-left"
+                          >
+                            {/* Header */}
+                            <div className="flex items-center gap-3.5 mb-5">
+                              {getFranchiseLogo(selectedSquadFranchise)}
+                              <div>
+                                <h4 className="font-extrabold text-base text-white tracking-tight leading-none mb-1">
+                                  {selectedSquadFranchise}
+                                </h4>
+                                <p className="text-[9px] text-slate-400 font-semibold tracking-wider uppercase leading-none">
+                                  IPL Auction Squad
+                                </p>
+                              </div>
+                            </div>
 
-                          <div className="bg-slate-900 border border-pitch-border p-2.5 rounded-lg">
-                            <span className="text-[10px] text-slate-400 font-bold block uppercase mb-0.5">XI Status</span>
-                            <span className={`font-accent font-black text-sm ${isMySquad ? (isXIValid ? 'text-pitch-glow' : 'text-pitch-crimson') : 'text-slate-400'}`}>
-                              {!isMySquad ? 'Opponent' : (isXIValid ? 'Ready' : 'Incomplete')}
-                            </span>
+                            {/* Metrics Bar */}
+                            <div className="bg-[#111322] border border-[#1e2136] rounded-2xl p-4 grid grid-cols-4 gap-2 mb-6 text-center">
+                              <div>
+                                <span className="font-accent font-black text-blue-400 text-sm leading-none block">
+                                  {activeSquadRecord.squad.length}
+                                </span>
+                                <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider block mt-1 leading-none">
+                                  Players
+                                </span>
+                              </div>
+                              <div>
+                                <span className="font-accent font-black text-purple-400 text-sm leading-none block">
+                                  {activeSquadRecord.squad.filter(p => p.isOverseas || (p.country && p.country !== 'India')).length}
+                                </span>
+                                <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider block mt-1 leading-none">
+                                  Overseas
+                                </span>
+                              </div>
+                              <div>
+                                <span className="font-accent font-black text-amber-400 text-sm leading-none block">
+                                  {(100.0 - activeSquadRecord.budget).toFixed(1)} Cr
+                                </span>
+                                <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider block mt-1 leading-none">
+                                  Spent
+                                </span>
+                              </div>
+                              <div>
+                                <span className="font-accent font-black text-emerald-400 text-sm leading-none block">
+                                  {activeSquadRecord.budget.toFixed(1)} Cr
+                                </span>
+                                <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider block mt-1 leading-none">
+                                  Remaining
+                                </span>
+                              </div>
+                            </div>
+
+                            {/* Bought Players List */}
+                            <div>
+                              <h5 className="text-[#10b981] font-bold text-[9px] uppercase tracking-wider mb-2 leading-none">
+                                Bought ({activeSquadRecord.squad.length})
+                              </h5>
+                              <div className="space-y-2 select-none">
+                                {activeSquadRecord.squad.map((p) => {
+                                  const isPlayerOvs = p.isOverseas || (p.country && p.country !== 'India');
+                                  return (
+                                    <div 
+                                      key={p.id} 
+                                      className="bg-[#141727] rounded-xl px-4 py-2 flex items-center justify-between border border-[#1d2036] transition"
+                                    >
+                                      <div className="flex items-center gap-1.5 min-w-0">
+                                        <span className="font-extrabold text-xs text-white truncate">{p.name}</span>
+                                        {isPlayerOvs && (
+                                          <span className="text-[7px] bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 px-1 py-0.5 rounded font-black tracking-widest font-accent uppercase">
+                                            os
+                                          </span>
+                                        )}
+                                      </div>
+                                      <span className="font-accent font-black text-[#10b981] text-xs leading-none">
+                                        {p.boughtFor.toFixed(1)} Cr
+                                      </span>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+
+                            {/* Promo Footer */}
+                            <div className="border-t border-[#1d2036] pt-4 mt-6 flex justify-between items-center">
+                              <div>
+                                <p className="font-extrabold text-xs text-amber-400 tracking-tight leading-none mb-1">
+                                  playauctiongame.com
+                                </p>
+                                <p className="text-[8px] text-slate-400 font-semibold leading-none">
+                                  Play your own IPL Auction with friends!
+                                </p>
+                              </div>
+                              <button className="bg-gradient-to-r from-orange-500 to-red-600 text-white font-black text-[8px] tracking-wider uppercase px-3 py-2 rounded-lg shadow-md select-none pointer-events-none">
+                                Play Now
+                              </button>
+                            </div>
                           </div>
                         </div>
 
-                        {/* Selected Playing XI constraints validator for current user */}
+                        {/* Interactive Manager Controls (Playing XI constraints validator for current user) */}
                         {isMySquad && (
                           <div className="mb-6 p-4 bg-slate-950 border border-pitch-border rounded-xl">
                             <h4 className="text-xs font-accent font-black text-pitch-glow uppercase tracking-widest mb-3">
@@ -2061,75 +2213,82 @@ export default function App() {
                             No players bought by this franchise.
                           </div>
                         ) : (
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            {activeSquadRecord.squad.map((p) => {
-                              const inXI = playingXI.includes(p.id);
-                              const isCapt = captainId === p.id;
-                              const isVC = viceCaptainId === p.id;
-                              const isPlayerOvs = p.isOverseas || (p.country && p.country !== 'India');
+                          <div>
+                            {isMySquad && (
+                              <h4 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider">
+                                Manage Playing XI & Bench
+                              </h4>
+                            )}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                              {activeSquadRecord.squad.map((p) => {
+                                const inXI = playingXI.includes(p.id);
+                                const isCapt = captainId === p.id;
+                                const isVC = viceCaptainId === p.id;
+                                const isPlayerOvs = p.isOverseas || (p.country && p.country !== 'India');
 
-                              return (
-                                <div 
-                                  key={p.id}
-                                  className={`p-3 border rounded-xl flex items-center justify-between text-xs transition ${
-                                    inXI 
-                                      ? 'bg-slate-900 border-pitch-glow/40 shadow-sm shadow-pitch-glow/5' 
-                                      : 'bg-slate-950/60 border-pitch-border/50'
-                                  }`}
-                                >
-                                  <div>
-                                    <div className="flex items-center gap-1.5">
-                                      <p className="font-bold text-white leading-tight">{p.name}</p>
-                                      {isPlayerOvs && <span className="text-[8px] bg-slate-800 text-slate-400 px-1 rounded font-accent">OVS</span>}
-                                      {isCapt && <span className="text-[8px] bg-pitch-gold text-pitch-dark px-1.5 py-0.5 rounded font-black font-accent">C</span>}
-                                      {isVC && <span className="text-[8px] bg-pitch-accent text-pitch-dark px-1.5 py-0.5 rounded font-black font-accent">VC</span>}
-                                    </div>
-                                    <p className="text-[10px] text-slate-400 font-medium mt-0.5">{p.role} (RTG: {p.rating})</p>
-                                  </div>
-                                  <div className="text-right flex items-center gap-3">
+                                return (
+                                  <div 
+                                    key={p.id}
+                                    className={`p-3 border rounded-xl flex items-center justify-between text-xs transition ${
+                                      inXI 
+                                        ? 'bg-slate-900 border-pitch-glow/40 shadow-sm shadow-pitch-glow/5' 
+                                        : 'bg-slate-950/60 border-pitch-border/50'
+                                    }`}
+                                  >
                                     <div>
-                                      <p className="font-accent font-black text-pitch-gold leading-none">₹{p.boughtFor.toFixed(2)} Cr</p>
-                                    </div>
-                                    {isMySquad && (
-                                      <div className="flex items-center gap-1.5 border-l border-pitch-border/50 pl-3">
-                                        <button
-                                          onClick={() => togglePlayerInXI(p.id)}
-                                          className={`px-2 py-1 rounded text-[9px] font-black uppercase transition ${
-                                            inXI
-                                              ? 'bg-pitch-glow text-pitch-dark'
-                                              : 'bg-slate-800 text-slate-400 hover:text-white'
-                                          }`}
-                                        >
-                                          {inXI ? 'XI' : 'BENCH'}
-                                        </button>
-                                        {inXI && (
-                                          <div className="flex flex-col gap-1">
-                                            <button
-                                              onClick={() => selectCaptain(p.id)}
-                                              className={`px-1 rounded text-[8px] font-bold leading-none py-0.5 transition ${
-                                                isCapt ? 'bg-pitch-gold text-pitch-dark' : 'bg-slate-950 text-slate-600 hover:text-slate-400'
-                                              }`}
-                                              title="Make Captain"
-                                            >
-                                              C
-                                            </button>
-                                            <button
-                                              onClick={() => selectViceCaptain(p.id)}
-                                              className={`px-1 rounded text-[8px] font-bold leading-none py-0.5 transition ${
-                                                isVC ? 'bg-pitch-accent text-pitch-dark' : 'bg-slate-950 text-slate-600 hover:text-slate-400'
-                                              }`}
-                                              title="Make Vice Captain"
-                                            >
-                                              VC
-                                            </button>
-                                          </div>
-                                        )}
+                                      <div className="flex items-center gap-1.5">
+                                        <p className="font-bold text-white leading-tight">{p.name}</p>
+                                        {isPlayerOvs && <span className="text-[8px] bg-slate-800 text-slate-400 px-1 rounded font-accent">OVS</span>}
+                                        {isCapt && <span className="text-[8px] bg-pitch-gold text-pitch-dark px-1.5 py-0.5 rounded font-black font-accent">C</span>}
+                                        {isVC && <span className="text-[8px] bg-pitch-accent text-pitch-dark px-1.5 py-0.5 rounded font-black font-accent">VC</span>}
                                       </div>
-                                    )}
+                                      <p className="text-[10px] text-slate-400 font-medium mt-0.5">{p.role} (RTG: {p.rating})</p>
+                                    </div>
+                                    <div className="text-right flex items-center gap-3">
+                                      <div>
+                                        <p className="font-accent font-black text-pitch-gold leading-none">₹{p.boughtFor.toFixed(2)} Cr</p>
+                                      </div>
+                                      {isMySquad && (
+                                        <div className="flex items-center gap-1.5 border-l border-pitch-border/50 pl-3">
+                                          <button
+                                            onClick={() => togglePlayerInXI(p.id)}
+                                            className={`px-2 py-1 rounded text-[9px] font-black uppercase transition ${
+                                              inXI
+                                                ? 'bg-pitch-glow text-pitch-dark'
+                                                : 'bg-slate-800 text-slate-400 hover:text-white'
+                                            }`}
+                                          >
+                                            {inXI ? 'XI' : 'BENCH'}
+                                          </button>
+                                          {inXI && (
+                                            <div className="flex flex-col gap-1">
+                                              <button
+                                                onClick={() => selectCaptain(p.id)}
+                                                className={`px-1 rounded text-[8px] font-bold leading-none py-0.5 transition ${
+                                                  isCapt ? 'bg-pitch-gold text-pitch-dark' : 'bg-slate-950 text-slate-600 hover:text-slate-400'
+                                                }`}
+                                                title="Make Captain"
+                                              >
+                                                C
+                                              </button>
+                                              <button
+                                                onClick={() => selectViceCaptain(p.id)}
+                                                className={`px-1 rounded text-[8px] font-bold leading-none py-0.5 transition ${
+                                                  isVC ? 'bg-pitch-accent text-pitch-dark' : 'bg-slate-950 text-slate-600 hover:text-slate-400'
+                                                }`}
+                                                title="Make Vice Captain"
+                                              >
+                                                VC
+                                              </button>
+                                            </div>
+                                          )}
+                                        </div>
+                                      )}
+                                    </div>
                                   </div>
-                                </div>
-                              );
-                            })}
+                                );
+                              })}
+                            </div>
                           </div>
                         )}
                       </div>
