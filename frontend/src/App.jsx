@@ -21,6 +21,11 @@ const IPL_FRANCHISES = [
   { name: 'Punjab Kings', short: 'PBKS', color: 'from-red-500 to-slate-200', border: 'border-red-500' }
 ];
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 
+  (window.location.hostname === 'localhost' 
+    ? 'http://localhost:5000' 
+    : `${window.location.protocol}//${window.location.hostname}:5000`);
+
 export default function App() {
   // Navigation & Socket State
   const [socket, setSocket] = useState(null);
@@ -74,12 +79,7 @@ export default function App() {
 
   // Connect to Backend Server
   useEffect(() => {
-    // Determine dynamic backend port based on current page URL or fallback to 5000
-    const backendUrl = window.location.hostname === 'localhost' 
-      ? 'http://localhost:5000' 
-      : `${window.location.protocol}//${window.location.hostname}:5000`;
-      
-    const newSocket = io(backendUrl, { autoConnect: false });
+    const newSocket = io(BACKEND_URL, { autoConnect: false });
     newSocket.connect();
     setSocket(newSocket);
 
@@ -91,11 +91,7 @@ export default function App() {
   // Profile auto-fetch if token exists
   useEffect(() => {
     if (userToken) {
-      const backendUrl = window.location.hostname === 'localhost' 
-        ? 'http://localhost:5000' 
-        : `${window.location.protocol}//${window.location.hostname}:5000`;
-        
-      fetch(`${backendUrl}/api/auth/me`, {
+      fetch(`${BACKEND_URL}/api/auth/me`, {
         headers: {
           'Authorization': `Bearer ${userToken}`
         }
@@ -123,13 +119,9 @@ export default function App() {
       return;
     }
 
-    const backendUrl = window.location.hostname === 'localhost' 
-      ? 'http://localhost:5000' 
-      : `${window.location.protocol}//${window.location.hostname}:5000`;
-
     const endpoint = authMode === 'login' ? 'login' : 'signup';
     try {
-      const res = await fetch(`${backendUrl}/api/auth/${endpoint}`, {
+      const res = await fetch(`${BACKEND_URL}/api/auth/${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
