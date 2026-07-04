@@ -1,0 +1,3692 @@
+[
+  {
+    "list_sr_no": 1,
+    "set_no": 1,
+    "set_code": "BA1",
+    "first_name": "Devon",
+    "surname": "Conway",
+    "country": "New Zealand",
+    "role": "BATTER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 2,
+    "set_no": 1,
+    "set_code": "BA1",
+    "first_name": "Jake",
+    "surname": "Fraser-McGurk",
+    "country": "Australia",
+    "role": "BATTER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 3,
+    "set_no": 1,
+    "set_code": "BA1",
+    "first_name": "Cameron",
+    "surname": "Green",
+    "country": "Australia",
+    "role": "BATTER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 4,
+    "set_no": 1,
+    "set_code": "BA1",
+    "first_name": "Sarfaraz",
+    "surname": "Khan",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 5,
+    "set_no": 1,
+    "set_code": "BA1",
+    "first_name": "David",
+    "surname": "Miller",
+    "country": "South Africa",
+    "role": "BATTER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 6,
+    "set_no": 1,
+    "set_code": "BA1",
+    "first_name": "Prithvi",
+    "surname": "Shaw",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 7,
+    "set_no": 2,
+    "set_code": "AL1",
+    "first_name": "Gus",
+    "surname": "Atkinson",
+    "country": "England",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 8,
+    "set_no": 2,
+    "set_code": "AL1",
+    "first_name": "Wanindu",
+    "surname": "Hasaranga",
+    "country": "Sri Lanka",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 9,
+    "set_no": 2,
+    "set_code": "AL1",
+    "first_name": "Deepak",
+    "surname": "Hooda",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 10,
+    "set_no": 2,
+    "set_code": "AL1",
+    "first_name": "Venkatesh",
+    "surname": "Iyer",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 11,
+    "set_no": 2,
+    "set_code": "AL1",
+    "first_name": "Liam",
+    "surname": "Livingstone",
+    "country": "England",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 12,
+    "set_no": 2,
+    "set_code": "AL1",
+    "first_name": "Wiaan",
+    "surname": "Mulder",
+    "country": "South Africa",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 13,
+    "set_no": 2,
+    "set_code": "AL1",
+    "first_name": "Rachin",
+    "surname": "Ravindra",
+    "country": "New Zealand",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 14,
+    "set_no": 3,
+    "set_code": "WK1",
+    "first_name": "Finn",
+    "surname": "Allen",
+    "country": "New Zealand",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 15,
+    "set_no": 3,
+    "set_code": "WK1",
+    "first_name": "Jonny",
+    "surname": "Bairstow",
+    "country": "England",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 16,
+    "set_no": 3,
+    "set_code": "WK1",
+    "first_name": "K.S.",
+    "surname": "Bharat",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 17,
+    "set_no": 3,
+    "set_code": "WK1",
+    "first_name": "Quinton",
+    "surname": "De Kock",
+    "country": "South Africa",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 18,
+    "set_no": 3,
+    "set_code": "WK1",
+    "first_name": "Ben",
+    "surname": "Duckett",
+    "country": "England",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 19,
+    "set_no": 3,
+    "set_code": "WK1",
+    "first_name": "Rahmanullah",
+    "surname": "Gurbaz",
+    "country": "Afghanistan",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 150
+  },
+  {
+    "list_sr_no": 20,
+    "set_no": 3,
+    "set_code": "WK1",
+    "first_name": "Jamie",
+    "surname": "Smith",
+    "country": "England",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 21,
+    "set_no": 4,
+    "set_code": "FA1",
+    "first_name": "Gerald",
+    "surname": "Coetzee",
+    "country": "South Africa",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 22,
+    "set_no": 4,
+    "set_code": "FA1",
+    "first_name": "Akash",
+    "surname": "Deep",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 23,
+    "set_no": 4,
+    "set_code": "FA1",
+    "first_name": "Jacob",
+    "surname": "Duffy",
+    "country": "New Zealand",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 24,
+    "set_no": 4,
+    "set_code": "FA1",
+    "first_name": "Fazalhaq",
+    "surname": "Farooqi",
+    "country": "Afghanistan",
+    "role": "BOWLER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 25,
+    "set_no": 4,
+    "set_code": "FA1",
+    "first_name": "Matt",
+    "surname": "Henry",
+    "country": "New Zealand",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 26,
+    "set_no": 4,
+    "set_code": "FA1",
+    "first_name": "Spencer",
+    "surname": "Johnson",
+    "country": "Australia",
+    "role": "BOWLER",
+    "reserve_price_lakh": 150
+  },
+  {
+    "list_sr_no": 27,
+    "set_no": 4,
+    "set_code": "FA1",
+    "first_name": "Shivam",
+    "surname": "Mavi",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 28,
+    "set_no": 4,
+    "set_code": "FA1",
+    "first_name": "Anrich",
+    "surname": "Nortje",
+    "country": "South Africa",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 29,
+    "set_no": 4,
+    "set_code": "FA1",
+    "first_name": "Matheesha",
+    "surname": "Pathirana",
+    "country": "Sri Lanka",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 30,
+    "set_no": 5,
+    "set_code": "SP1",
+    "first_name": "Ravi",
+    "surname": "Bishnoi",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 31,
+    "set_no": 5,
+    "set_code": "SP1",
+    "first_name": "Rahul",
+    "surname": "Chahar",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 32,
+    "set_no": 5,
+    "set_code": "SP1",
+    "first_name": "Akeal",
+    "surname": "Hosein",
+    "country": "West Indies",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 33,
+    "set_no": 5,
+    "set_code": "SP1",
+    "first_name": "Mujeeb",
+    "surname": "Rahman",
+    "country": "Afghanistan",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 34,
+    "set_no": 5,
+    "set_code": "SP1",
+    "first_name": "Maheesh",
+    "surname": "Theekshana",
+    "country": "Sri Lanka",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 35,
+    "set_no": 6,
+    "set_code": "UBA1",
+    "first_name": "Aarya",
+    "surname": "Desai",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 36,
+    "set_no": 6,
+    "set_code": "UBA1",
+    "first_name": "Yash",
+    "surname": "Dhull",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 37,
+    "set_no": 6,
+    "set_code": "UBA1",
+    "first_name": "Abhinav",
+    "surname": "Manohar",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 38,
+    "set_no": 6,
+    "set_code": "UBA1",
+    "first_name": "Anmolpreet",
+    "surname": "Singh",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 39,
+    "set_no": 6,
+    "set_code": "UBA1",
+    "first_name": "Atharva",
+    "surname": "Taide",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 40,
+    "set_no": 6,
+    "set_code": "UBA1",
+    "first_name": "Abhinav",
+    "surname": "Tejrana",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 41,
+    "set_no": 7,
+    "set_code": "UAL1",
+    "first_name": "Auqib",
+    "surname": "Dar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 42,
+    "set_no": 7,
+    "set_code": "UAL1",
+    "first_name": "Rajvardhan",
+    "surname": "Hangargekar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 40
+  },
+  {
+    "list_sr_no": 43,
+    "set_no": 7,
+    "set_code": "UAL1",
+    "first_name": "Tanush",
+    "surname": "Kotian",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 44,
+    "set_no": 7,
+    "set_code": "UAL1",
+    "first_name": "Shivang",
+    "surname": "Kumar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 45,
+    "set_no": 7,
+    "set_code": "UAL1",
+    "first_name": "Mahipal",
+    "surname": "Lomror",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 50
+  },
+  {
+    "list_sr_no": 46,
+    "set_no": 7,
+    "set_code": "UAL1",
+    "first_name": "Kamlesh",
+    "surname": "Nagarkoti",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 47,
+    "set_no": 7,
+    "set_code": "UAL1",
+    "first_name": "Vijay",
+    "surname": "Shankar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 48,
+    "set_no": 7,
+    "set_code": "UAL1",
+    "first_name": "Sanvir",
+    "surname": "Singh",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 49,
+    "set_no": 7,
+    "set_code": "UAL1",
+    "first_name": "Edhen",
+    "surname": "Tom",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 50,
+    "set_no": 7,
+    "set_code": "UAL1",
+    "first_name": "Prashant",
+    "surname": "Veer",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 51,
+    "set_no": 8,
+    "set_code": "UWK1",
+    "first_name": "Ruchit",
+    "surname": "Ahir",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 52,
+    "set_no": 8,
+    "set_code": "UWK1",
+    "first_name": "Vansh",
+    "surname": "Bedi",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 53,
+    "set_no": 8,
+    "set_code": "UWK1",
+    "first_name": "Mukul",
+    "surname": "Choudhary",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 54,
+    "set_no": 8,
+    "set_code": "UWK1",
+    "first_name": "Tushar",
+    "surname": "Raheja",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 55,
+    "set_no": 8,
+    "set_code": "UWK1",
+    "first_name": "Kartik",
+    "surname": "Sharma",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 56,
+    "set_no": 8,
+    "set_code": "UWK1",
+    "first_name": "Tejasvi",
+    "surname": "Singh",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 57,
+    "set_no": 9,
+    "set_code": "UFA1",
+    "first_name": "Raj",
+    "surname": "Limbani",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 58,
+    "set_no": 9,
+    "set_code": "UFA1",
+    "first_name": "Akash",
+    "surname": "Madhwal",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 59,
+    "set_no": 9,
+    "set_code": "UFA1",
+    "first_name": "Sushant",
+    "surname": "Mishra",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 60,
+    "set_no": 9,
+    "set_code": "UFA1",
+    "first_name": "Ashok",
+    "surname": "Sharma",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 61,
+    "set_no": 9,
+    "set_code": "UFA1",
+    "first_name": "Simarjeet",
+    "surname": "Singh",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 62,
+    "set_no": 9,
+    "set_code": "UFA1",
+    "first_name": "Naman",
+    "surname": "Tiwari",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 63,
+    "set_no": 9,
+    "set_code": "UFA1",
+    "first_name": "Kartik",
+    "surname": "Tyagi",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 64,
+    "set_no": 10,
+    "set_code": "USP1",
+    "first_name": "Yash Raj",
+    "surname": "Punja",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 65,
+    "set_no": 10,
+    "set_code": "USP1",
+    "first_name": "Vignesh",
+    "surname": "Puthur",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 66,
+    "set_no": 10,
+    "set_code": "USP1",
+    "first_name": "Karn",
+    "surname": "Sharma",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 50
+  },
+  {
+    "list_sr_no": 67,
+    "set_no": 10,
+    "set_code": "USP1",
+    "first_name": "Shivam",
+    "surname": "Shukla",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 68,
+    "set_no": 10,
+    "set_code": "USP1",
+    "first_name": "Kumar Kartikeya",
+    "surname": "Singh",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 69,
+    "set_no": 10,
+    "set_code": "USP1",
+    "first_name": "Prashant",
+    "surname": "Solanki",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 70,
+    "set_no": 10,
+    "set_code": "USP1",
+    "first_name": "Wahidullah",
+    "surname": "Zadran",
+    "country": "Afghanistan",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 71,
+    "set_no": 11,
+    "set_code": "BA2",
+    "first_name": "Mayank",
+    "surname": "Agarawal",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 72,
+    "set_no": 11,
+    "set_code": "BA2",
+    "first_name": "Sediqullah",
+    "surname": "Atal",
+    "country": "Afghanistan",
+    "role": "BATTER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 73,
+    "set_no": 11,
+    "set_code": "BA2",
+    "first_name": "Ackeem",
+    "surname": "Auguste",
+    "country": "West Indies",
+    "role": "BATTER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 74,
+    "set_no": 11,
+    "set_code": "BA2",
+    "first_name": "Reeza",
+    "surname": "Hendricks",
+    "country": "South Africa",
+    "role": "BATTER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 75,
+    "set_no": 11,
+    "set_code": "BA2",
+    "first_name": "Pathum",
+    "surname": "Nissanka",
+    "country": "Sri Lanka",
+    "role": "BATTER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 76,
+    "set_no": 11,
+    "set_code": "BA2",
+    "first_name": "Tim",
+    "surname": "Robinson",
+    "country": "New Zealand",
+    "role": "BATTER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 77,
+    "set_no": 11,
+    "set_code": "BA2",
+    "first_name": "Steve",
+    "surname": "Smith",
+    "country": "Australia",
+    "role": "BATTER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 78,
+    "set_no": 11,
+    "set_code": "BA2",
+    "first_name": "Rahul",
+    "surname": "Tripathi",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 79,
+    "set_no": 12,
+    "set_code": "AL2",
+    "first_name": "Sean",
+    "surname": "Abbott",
+    "country": "Australia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 80,
+    "set_no": 12,
+    "set_code": "AL2",
+    "first_name": "Michael",
+    "surname": "Bracewell",
+    "country": "New Zealand",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 81,
+    "set_no": 12,
+    "set_code": "AL2",
+    "first_name": "Ben",
+    "surname": "Dwarshuis",
+    "country": "Australia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 82,
+    "set_no": 12,
+    "set_code": "AL2",
+    "first_name": "Zak",
+    "surname": "Foulkes",
+    "country": "New Zealand",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 83,
+    "set_no": 12,
+    "set_code": "AL2",
+    "first_name": "Jason",
+    "surname": "Holder",
+    "country": "West Indies",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 84,
+    "set_no": 12,
+    "set_code": "AL2",
+    "first_name": "Daryl",
+    "surname": "Mitchell",
+    "country": "New Zealand",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 85,
+    "set_no": 12,
+    "set_code": "AL2",
+    "first_name": "Daniel",
+    "surname": "Sams",
+    "country": "Australia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 86,
+    "set_no": 12,
+    "set_code": "AL2",
+    "first_name": "Dasun",
+    "surname": "Shanaka",
+    "country": "Sri Lanka",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 87,
+    "set_no": 12,
+    "set_code": "AL2",
+    "first_name": "Matthew",
+    "surname": "Short",
+    "country": "Australia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 150
+  },
+  {
+    "list_sr_no": 88,
+    "set_no": 13,
+    "set_code": "WK2",
+    "first_name": "Tom",
+    "surname": "Banton",
+    "country": "England",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 89,
+    "set_no": 13,
+    "set_code": "WK2",
+    "first_name": "Jordan",
+    "surname": "Cox",
+    "country": "England",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 90,
+    "set_no": 13,
+    "set_code": "WK2",
+    "first_name": "Shai",
+    "surname": "Hope",
+    "country": "West Indies",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 91,
+    "set_no": 13,
+    "set_code": "WK2",
+    "first_name": "Josh",
+    "surname": "Inglis",
+    "country": "Australia",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 92,
+    "set_no": 13,
+    "set_code": "WK2",
+    "first_name": "Benjamin",
+    "surname": "McDermott",
+    "country": "Australia",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 93,
+    "set_no": 13,
+    "set_code": "WK2",
+    "first_name": "Kusal",
+    "surname": "Mendis",
+    "country": "Sri Lanka",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 94,
+    "set_no": 13,
+    "set_code": "WK2",
+    "first_name": "Kusal",
+    "surname": "Perera",
+    "country": "Sri Lanka",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 95,
+    "set_no": 13,
+    "set_code": "WK2",
+    "first_name": "Tim",
+    "surname": "Seifert",
+    "country": "New Zealand",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 150
+  },
+  {
+    "list_sr_no": 96,
+    "set_no": 14,
+    "set_code": "FA2",
+    "first_name": "Kyle",
+    "surname": "Jamieson",
+    "country": "New Zealand",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 97,
+    "set_no": 14,
+    "set_code": "FA2",
+    "first_name": "Saqib",
+    "surname": "Mahmood",
+    "country": "England",
+    "role": "BOWLER",
+    "reserve_price_lakh": 150
+  },
+  {
+    "list_sr_no": 98,
+    "set_no": 14,
+    "set_code": "FA2",
+    "first_name": "Adam",
+    "surname": "Milne",
+    "country": "New Zealand",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 99,
+    "set_no": 14,
+    "set_code": "FA2",
+    "first_name": "Lungisani",
+    "surname": "Ngidi",
+    "country": "South Africa",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 100,
+    "set_no": 14,
+    "set_code": "FA2",
+    "first_name": "William",
+    "surname": "Orourke",
+    "country": "New Zealand",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 101,
+    "set_no": 14,
+    "set_code": "FA2",
+    "first_name": "Mustafizur",
+    "surname": "Rahman",
+    "country": "Bangladesh",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 102,
+    "set_no": 14,
+    "set_code": "FA2",
+    "first_name": "Chetan",
+    "surname": "Sakariya",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 103,
+    "set_no": 14,
+    "set_code": "FA2",
+    "first_name": "Kuldeep",
+    "surname": "Sen",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 104,
+    "set_no": 14,
+    "set_code": "FA2",
+    "first_name": "Umesh",
+    "surname": "Yadav",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 150
+  },
+  {
+    "list_sr_no": 105,
+    "set_no": 15,
+    "set_code": "SP2",
+    "first_name": "Qais",
+    "surname": "Ahmad",
+    "country": "Afghanistan",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 106,
+    "set_no": 15,
+    "set_code": "SP2",
+    "first_name": "Rishad",
+    "surname": "Hossain",
+    "country": "Bangladesh",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 107,
+    "set_no": 15,
+    "set_code": "SP2",
+    "first_name": "Mohammad Waqar",
+    "surname": "Salamkheil",
+    "country": "Afghanistan",
+    "role": "BOWLER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 108,
+    "set_no": 15,
+    "set_code": "SP2",
+    "first_name": "Viyaskanth",
+    "surname": "Vijayakanth",
+    "country": "Sri Lanka",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 109,
+    "set_no": 16,
+    "set_code": "UBA2",
+    "first_name": "Ankit",
+    "surname": "Kumar",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 110,
+    "set_no": 16,
+    "set_code": "UBA2",
+    "first_name": "Rohan",
+    "surname": "Kunnummal",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 111,
+    "set_no": 16,
+    "set_code": "UBA2",
+    "first_name": "Danish",
+    "surname": "Malewar",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 112,
+    "set_no": 16,
+    "set_code": "UBA2",
+    "first_name": "Pukhraj",
+    "surname": "Mann",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 113,
+    "set_no": 16,
+    "set_code": "UBA2",
+    "first_name": "Salman",
+    "surname": "Nizar",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 114,
+    "set_no": 16,
+    "set_code": "UBA2",
+    "first_name": "Aman Rao",
+    "surname": "Perala",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 115,
+    "set_no": 16,
+    "set_code": "UBA2",
+    "first_name": "Akshat",
+    "surname": "Raghuwanshi",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 116,
+    "set_no": 16,
+    "set_code": "UBA2",
+    "first_name": "Manan",
+    "surname": "Vohra",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 117,
+    "set_no": 17,
+    "set_code": "UAL2",
+    "first_name": "Yuvraj",
+    "surname": "Chaudhary",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 118,
+    "set_no": 17,
+    "set_code": "UAL2",
+    "first_name": "Satvik",
+    "surname": "Deswal",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 119,
+    "set_no": 17,
+    "set_code": "UAL2",
+    "first_name": "Aman",
+    "surname": "Khan",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 120,
+    "set_no": 17,
+    "set_code": "UAL2",
+    "first_name": "Darshan",
+    "surname": "Nalkande",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 121,
+    "set_no": 17,
+    "set_code": "UAL2",
+    "first_name": "Vicky",
+    "surname": "Ostwal",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 122,
+    "set_no": 17,
+    "set_code": "UAL2",
+    "first_name": "Sairaj",
+    "surname": "Patil",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 123,
+    "set_no": 17,
+    "set_code": "UAL2",
+    "first_name": "Suyash",
+    "surname": "Prabhudessai",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 124,
+    "set_no": 17,
+    "set_code": "UAL2",
+    "first_name": "Mayank",
+    "surname": "Rawat",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 125,
+    "set_no": 17,
+    "set_code": "UAL2",
+    "first_name": "Harsh",
+    "surname": "Tyagi",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 126,
+    "set_no": 17,
+    "set_code": "UAL2",
+    "first_name": "Mangesh",
+    "surname": "Yadav",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 127,
+    "set_no": 18,
+    "set_code": "UWK2",
+    "first_name": "Salil",
+    "surname": "Arora",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 128,
+    "set_no": 18,
+    "set_code": "UWK2",
+    "first_name": "Ricky",
+    "surname": "Bhui",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 129,
+    "set_no": 18,
+    "set_code": "UWK2",
+    "first_name": "Rahul",
+    "surname": "Buddhi",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 130,
+    "set_no": 18,
+    "set_code": "UWK2",
+    "first_name": "Saurav",
+    "surname": "Chuahan",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 131,
+    "set_no": 18,
+    "set_code": "UWK2",
+    "first_name": "Yashvardhan",
+    "surname": "Dalal",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 132,
+    "set_no": 18,
+    "set_code": "UWK2",
+    "first_name": "Abhishek",
+    "surname": "Pathak",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 133,
+    "set_no": 18,
+    "set_code": "UWK2",
+    "first_name": "Kunal",
+    "surname": "Rathore",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 134,
+    "set_no": 18,
+    "set_code": "UWK2",
+    "first_name": "Ravi",
+    "surname": "Singh",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 135,
+    "set_no": 19,
+    "set_code": "UFA2",
+    "first_name": "K.M",
+    "surname": "Asif",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 40
+  },
+  {
+    "list_sr_no": 136,
+    "set_no": 19,
+    "set_code": "UFA2",
+    "first_name": "Sakib",
+    "surname": "Hussain",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 137,
+    "set_no": 19,
+    "set_code": "UFA2",
+    "first_name": "Mohammad",
+    "surname": "Izhar",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 138,
+    "set_no": 19,
+    "set_code": "UFA2",
+    "first_name": "Vidwath",
+    "surname": "Kaverappa",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 139,
+    "set_no": 19,
+    "set_code": "UFA2",
+    "first_name": "Vijay",
+    "surname": "Kumar",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 140,
+    "set_no": 19,
+    "set_code": "UFA2",
+    "first_name": "Vidyadhar",
+    "surname": "Patil",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 141,
+    "set_no": 19,
+    "set_code": "UFA2",
+    "first_name": "PV.Satyanarayana",
+    "surname": "Raju",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 142,
+    "set_no": 19,
+    "set_code": "UFA2",
+    "first_name": "Onkar",
+    "surname": "Tarmale",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 143,
+    "set_no": 19,
+    "set_code": "UFA2",
+    "first_name": "Prithviraj",
+    "surname": "Yarra",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 144,
+    "set_no": 20,
+    "set_code": "USP2",
+    "first_name": "Shubham",
+    "surname": "Agrawal",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 40
+  },
+  {
+    "list_sr_no": 145,
+    "set_no": 20,
+    "set_code": "USP2",
+    "first_name": "Murugan",
+    "surname": "Ashwin",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 146,
+    "set_no": 20,
+    "set_code": "USP2",
+    "first_name": "Tejas",
+    "surname": "Baroka",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 147,
+    "set_no": 20,
+    "set_code": "USP2",
+    "first_name": "K.C.",
+    "surname": "Cariappa",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 148,
+    "set_no": 20,
+    "set_code": "USP2",
+    "first_name": "Kartik",
+    "surname": "Chadha",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 149,
+    "set_no": 20,
+    "set_code": "USP2",
+    "first_name": "Pravin",
+    "surname": "Dubey",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 150,
+    "set_no": 20,
+    "set_code": "USP2",
+    "first_name": "Mohit",
+    "surname": "Rathee",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 151,
+    "set_no": 20,
+    "set_code": "USP2",
+    "first_name": "Himanshu",
+    "surname": "Sharma",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 152,
+    "set_no": 20,
+    "set_code": "USP2",
+    "first_name": "Bailapudi",
+    "surname": "Yeswanth",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 153,
+    "set_no": 21,
+    "set_code": "AL3",
+    "first_name": "Rehan",
+    "surname": "Ahmed",
+    "country": "England",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 154,
+    "set_no": 21,
+    "set_code": "AL3",
+    "first_name": "Cooper",
+    "surname": "Connolly",
+    "country": "Australia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 155,
+    "set_no": 21,
+    "set_code": "AL3",
+    "first_name": "Tom",
+    "surname": "Curran",
+    "country": "England",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 156,
+    "set_no": 21,
+    "set_code": "AL3",
+    "first_name": "Bevon-John",
+    "surname": "Jacobs",
+    "country": "New Zealand",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 157,
+    "set_no": 21,
+    "set_code": "AL3",
+    "first_name": "Daniel",
+    "surname": "Lawrence",
+    "country": "England",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 158,
+    "set_no": 21,
+    "set_code": "AL3",
+    "first_name": "George",
+    "surname": "Linde",
+    "country": "South Africa",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 159,
+    "set_no": 21,
+    "set_code": "AL3",
+    "first_name": "Gulbadin",
+    "surname": "Naib",
+    "country": "Afghanistan",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 160,
+    "set_no": 21,
+    "set_code": "AL3",
+    "first_name": "William",
+    "surname": "Sutherland",
+    "country": "Australia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 161,
+    "set_no": 21,
+    "set_code": "AL3",
+    "first_name": "Beau",
+    "surname": "Webster",
+    "country": "Australia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 125
+  },
+  {
+    "list_sr_no": 162,
+    "set_no": 22,
+    "set_code": "FA3",
+    "first_name": "Taskin",
+    "surname": "Ahmed",
+    "country": "Bangladesh",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 163,
+    "set_no": 22,
+    "set_code": "FA3",
+    "first_name": "Richard",
+    "surname": "Gleeson",
+    "country": "England",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 164,
+    "set_no": 22,
+    "set_code": "FA3",
+    "first_name": "Alzarri",
+    "surname": "Joseph",
+    "country": "West Indies",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 165,
+    "set_no": 22,
+    "set_code": "FA3",
+    "first_name": "Shamar",
+    "surname": "Joseph",
+    "country": "West Indies",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 166,
+    "set_no": 22,
+    "set_code": "FA3",
+    "first_name": "Riley",
+    "surname": "Meredith",
+    "country": "Australia",
+    "role": "BOWLER",
+    "reserve_price_lakh": 150
+  },
+  {
+    "list_sr_no": 167,
+    "set_no": 22,
+    "set_code": "FA3",
+    "first_name": "Jhye",
+    "surname": "Richardson",
+    "country": "Australia",
+    "role": "BOWLER",
+    "reserve_price_lakh": 150
+  },
+  {
+    "list_sr_no": 168,
+    "set_no": 22,
+    "set_code": "FA3",
+    "first_name": "Navdeep",
+    "surname": "Saini",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 169,
+    "set_no": 22,
+    "set_code": "FA3",
+    "first_name": "Naveen",
+    "surname": "Ul Haq",
+    "country": "Afghanistan",
+    "role": "BOWLER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 170,
+    "set_no": 22,
+    "set_code": "FA3",
+    "first_name": "Luke",
+    "surname": "Wood",
+    "country": "England",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 171,
+    "set_no": 23,
+    "set_code": "UBA3",
+    "first_name": "Kunal",
+    "surname": "Chandela",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 172,
+    "set_no": 23,
+    "set_code": "UBA3",
+    "first_name": "Ayush",
+    "surname": "Doseja",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 173,
+    "set_no": 23,
+    "set_code": "UBA3",
+    "first_name": "Qamran",
+    "surname": "Iqbal",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 174,
+    "set_no": 23,
+    "set_code": "UBA3",
+    "first_name": "M.Dheeraj",
+    "surname": "Kumar",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 175,
+    "set_no": 23,
+    "set_code": "UBA3",
+    "first_name": "Bhanu",
+    "surname": "Pania",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 176,
+    "set_no": 23,
+    "set_code": "UBA3",
+    "first_name": "Sahil",
+    "surname": "Parakh",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 177,
+    "set_no": 23,
+    "set_code": "UBA3",
+    "first_name": "Arsh Kabir",
+    "surname": "Ranga",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 178,
+    "set_no": 23,
+    "set_code": "UBA3",
+    "first_name": "Adarsh",
+    "surname": "Singh",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 179,
+    "set_no": 24,
+    "set_code": "UAL3",
+    "first_name": "Manoj",
+    "surname": "Bhandage",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 180,
+    "set_no": 24,
+    "set_code": "UAL3",
+    "first_name": "Mayank",
+    "surname": "Dagar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 181,
+    "set_no": 24,
+    "set_code": "UAL3",
+    "first_name": "Raghav",
+    "surname": "Goyal",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 182,
+    "set_no": 24,
+    "set_code": "UAL3",
+    "first_name": "Manvanth",
+    "surname": "Kumar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 183,
+    "set_no": 24,
+    "set_code": "UAL3",
+    "first_name": "Abid",
+    "surname": "Mushtaq",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 184,
+    "set_no": 24,
+    "set_code": "UAL3",
+    "first_name": "Jalaj",
+    "surname": "Saxena",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 40
+  },
+  {
+    "list_sr_no": 185,
+    "set_no": 24,
+    "set_code": "UAL3",
+    "first_name": "Atit",
+    "surname": "Sheth",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 186,
+    "set_no": 24,
+    "set_code": "UAL3",
+    "first_name": "Hritik",
+    "surname": "Shokeen",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 187,
+    "set_no": 24,
+    "set_code": "UAL3",
+    "first_name": "Jagadeesha",
+    "surname": "Suchith",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 188,
+    "set_no": 24,
+    "set_code": "UAL3",
+    "first_name": "Tanay",
+    "surname": "Thyagarajann",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 189,
+    "set_no": 25,
+    "set_code": "UWK3",
+    "first_name": "Joe",
+    "surname": "Clarke",
+    "country": "England",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 50
+  },
+  {
+    "list_sr_no": 190,
+    "set_no": 25,
+    "set_code": "UWK3",
+    "first_name": "Connor",
+    "surname": "Esterhuizen",
+    "country": "South Africa",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 191,
+    "set_no": 25,
+    "set_code": "UWK3",
+    "first_name": "Ajitesh",
+    "surname": "Guruswamy",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 192,
+    "set_no": 25,
+    "set_code": "UWK3",
+    "first_name": "Siddharth",
+    "surname": "Joon",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 193,
+    "set_no": 25,
+    "set_code": "UWK3",
+    "first_name": "Tom",
+    "surname": "Moores",
+    "country": "England",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 40
+  },
+  {
+    "list_sr_no": 194,
+    "set_no": 25,
+    "set_code": "UWK3",
+    "first_name": "Bipin",
+    "surname": "Saurabh",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 195,
+    "set_no": 25,
+    "set_code": "UWK3",
+    "first_name": "Vishnu",
+    "surname": "Solanki",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 196,
+    "set_no": 25,
+    "set_code": "UWK3",
+    "first_name": "Hardik",
+    "surname": "Tamore",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 197,
+    "set_no": 26,
+    "set_code": "UFA3",
+    "first_name": "Sayan",
+    "surname": "Ghosh",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 198,
+    "set_no": 26,
+    "set_code": "UFA3",
+    "first_name": "Money",
+    "surname": "Grewal",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 199,
+    "set_no": 26,
+    "set_code": "UFA3",
+    "first_name": "Arpit",
+    "surname": "Guleria",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 200,
+    "set_no": 26,
+    "set_code": "UFA3",
+    "first_name": "Sunil",
+    "surname": "Kumar",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 201,
+    "set_no": 26,
+    "set_code": "UFA3",
+    "first_name": "Tristan",
+    "surname": "Luus",
+    "country": "South Africa",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 202,
+    "set_no": 26,
+    "set_code": "UFA3",
+    "first_name": "Divesh",
+    "surname": "Divesh",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 203,
+    "set_no": 26,
+    "set_code": "UFA3",
+    "first_name": "Abhilash",
+    "surname": "Shetty",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 204,
+    "set_no": 26,
+    "set_code": "UFA3",
+    "first_name": "Irfan",
+    "surname": "Umair",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 205,
+    "set_no": 26,
+    "set_code": "UFA3",
+    "first_name": "Kuldip",
+    "surname": "Yadav",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 206,
+    "set_no": 27,
+    "set_code": "USP3",
+    "first_name": "Manan",
+    "surname": "Bhardwaj",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 207,
+    "set_no": 27,
+    "set_code": "USP3",
+    "first_name": "Shreyas",
+    "surname": "Chavan",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 208,
+    "set_no": 27,
+    "set_code": "USP3",
+    "first_name": "Parikshit",
+    "surname": "Dhanak",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 209,
+    "set_no": 27,
+    "set_code": "USP3",
+    "first_name": "Chintal",
+    "surname": "Gandhi",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 210,
+    "set_no": 27,
+    "set_code": "USP3",
+    "first_name": "Dharmendrasinh",
+    "surname": "Jadeja",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 211,
+    "set_no": 27,
+    "set_code": "USP3",
+    "first_name": "Amit",
+    "surname": "Kumar",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 212,
+    "set_no": 27,
+    "set_code": "USP3",
+    "first_name": "Vishal",
+    "surname": "Nishad",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 213,
+    "set_no": 27,
+    "set_code": "USP3",
+    "first_name": "Saumy",
+    "surname": "Pandey",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 214,
+    "set_no": 27,
+    "set_code": "USP3",
+    "first_name": "Jhathavedh",
+    "surname": "Subramanyan",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 215,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "Muhammad",
+    "surname": "Abbas",
+    "country": "New Zealand",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 216,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "Charith",
+    "surname": "Asalanka",
+    "country": "Sri Lanka",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 217,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "Roston",
+    "surname": "Chase",
+    "country": "West Indies",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 125
+  },
+  {
+    "list_sr_no": 218,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "Liam",
+    "surname": "Dawson",
+    "country": "England",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 200
+  },
+  {
+    "list_sr_no": 219,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "George",
+    "surname": "Garton",
+    "country": "England",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 220,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "Kyle",
+    "surname": "Mayers",
+    "country": "West Indies",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 125
+  },
+  {
+    "list_sr_no": 221,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "Dwaine",
+    "surname": "Pretorius",
+    "country": "South Africa",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 222,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "Nathan",
+    "surname": "Smith",
+    "country": "New Zealand",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 223,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "Dunith",
+    "surname": "Wellalage",
+    "country": "Sri Lanka",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 224,
+    "set_no": 29,
+    "set_code": "FA4",
+    "first_name": "Jason",
+    "surname": "Behrendorff",
+    "country": "Australia",
+    "role": "BOWLER",
+    "reserve_price_lakh": 150
+  },
+  {
+    "list_sr_no": 225,
+    "set_no": 29,
+    "set_code": "FA4",
+    "first_name": "Tanzim",
+    "surname": "Hasan Sakib",
+    "country": "Bangladesh",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 226,
+    "set_no": 29,
+    "set_code": "FA4",
+    "first_name": "Matthew",
+    "surname": "Potts",
+    "country": "England",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 227,
+    "set_no": 29,
+    "set_code": "FA4",
+    "first_name": "Nahid",
+    "surname": "Rana",
+    "country": "Bangladesh",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 228,
+    "set_no": 29,
+    "set_code": "FA4",
+    "first_name": "Olly",
+    "surname": "Stone",
+    "country": "England",
+    "role": "BOWLER",
+    "reserve_price_lakh": 125
+  },
+  {
+    "list_sr_no": 229,
+    "set_no": 29,
+    "set_code": "FA4",
+    "first_name": "Joshua",
+    "surname": "Tongue",
+    "country": "England",
+    "role": "BOWLER",
+    "reserve_price_lakh": 100
+  },
+  {
+    "list_sr_no": 230,
+    "set_no": 29,
+    "set_code": "FA4",
+    "first_name": "Sandeep",
+    "surname": "Warrier",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 231,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Sachin",
+    "surname": "Dhas",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 232,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Miles",
+    "surname": "Hammond",
+    "country": "England",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 233,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Ahammed",
+    "surname": "Imran",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 234,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Vishvarajsinh",
+    "surname": "Jadeja",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 235,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Ayaz",
+    "surname": "Khan",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 236,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Daniel",
+    "surname": "Lategan",
+    "country": "England",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 237,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Siddhant",
+    "surname": "Rana",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 238,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Aaron",
+    "surname": "Varghese",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 239,
+    "set_no": 31,
+    "set_code": "UAL4",
+    "first_name": "Atharva",
+    "surname": "Ankolekar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 240,
+    "set_no": 31,
+    "set_code": "UAL4",
+    "first_name": "Abdul",
+    "surname": "Bazith",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 241,
+    "set_no": 31,
+    "set_code": "UAL4",
+    "first_name": "Karan",
+    "surname": "Lal",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 242,
+    "set_no": 31,
+    "set_code": "UAL4",
+    "first_name": "Shams",
+    "surname": "Mulani",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 243,
+    "set_no": 31,
+    "set_code": "UAL4",
+    "first_name": "Ripal",
+    "surname": "Patel",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 244,
+    "set_no": 31,
+    "set_code": "UAL4",
+    "first_name": "Prince",
+    "surname": "Rai",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 245,
+    "set_no": 31,
+    "set_code": "UAL4",
+    "first_name": "Vivrant",
+    "surname": "Sharma",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 246,
+    "set_no": 31,
+    "set_code": "UAL4",
+    "first_name": "Utkarsh",
+    "surname": "Singh",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 247,
+    "set_no": 31,
+    "set_code": "UAL4",
+    "first_name": "Ayush",
+    "surname": "Vartak",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 248,
+    "set_no": 31,
+    "set_code": "UAL4",
+    "first_name": "Sanjay",
+    "surname": "Yadav",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 249,
+    "set_no": 32,
+    "set_code": "UFA4",
+    "first_name": "Sayed Irfan",
+    "surname": "Aftab",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 250,
+    "set_no": 32,
+    "set_code": "UFA4",
+    "first_name": "Esakkimuthu",
+    "surname": "Ayyakutti",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 251,
+    "set_no": 32,
+    "set_code": "UFA4",
+    "first_name": "Praful",
+    "surname": "Hinge",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 252,
+    "set_no": 32,
+    "set_code": "UFA4",
+    "first_name": "Pankaj",
+    "surname": "Jaswal",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 253,
+    "set_no": 32,
+    "set_code": "UFA4",
+    "first_name": "Kulwant",
+    "surname": "Khejroliya",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 254,
+    "set_no": 32,
+    "set_code": "UFA4",
+    "first_name": "Ravi",
+    "surname": "Kumar",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 255,
+    "set_no": 32,
+    "set_code": "UFA4",
+    "first_name": "Rajan",
+    "surname": "Kumar",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 256,
+    "set_no": 32,
+    "set_code": "UFA4",
+    "first_name": "Safvan",
+    "surname": "Patel",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 257,
+    "set_no": 32,
+    "set_code": "UFA4",
+    "first_name": "Ishan",
+    "surname": "Porel",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 258,
+    "set_no": 33,
+    "set_code": "USP4",
+    "first_name": "Purav",
+    "surname": "Agarwal",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 259,
+    "set_no": 33,
+    "set_code": "USP4",
+    "first_name": "Jikku",
+    "surname": "Bright",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 260,
+    "set_no": 33,
+    "set_code": "USP4",
+    "first_name": "Yash",
+    "surname": "Dicholkar",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 261,
+    "set_no": 33,
+    "set_code": "USP4",
+    "first_name": "Arab",
+    "surname": "Gul",
+    "country": "Afghanistan",
+    "role": "BOWLER",
+    "reserve_price_lakh": 40
+  },
+  {
+    "list_sr_no": 262,
+    "set_no": 33,
+    "set_code": "USP4",
+    "first_name": "Rakibul",
+    "surname": "Hasan",
+    "country": "Bangladesh",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 263,
+    "set_no": 33,
+    "set_code": "USP4",
+    "first_name": "Traveen",
+    "surname": "Mathew",
+    "country": "Sri Lanka",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 264,
+    "set_no": 33,
+    "set_code": "USP4",
+    "first_name": "Naman",
+    "surname": "Pushpak",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 265,
+    "set_no": 33,
+    "set_code": "USP4",
+    "first_name": "Izaz",
+    "surname": "Sawariya",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 266,
+    "set_no": 33,
+    "set_code": "USP4",
+    "first_name": "Roshan",
+    "surname": "Wagshare",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 267,
+    "set_no": 34,
+    "set_code": "FA5",
+    "first_name": "Wesley",
+    "surname": "Agar",
+    "country": "Australia",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 268,
+    "set_no": 34,
+    "set_code": "FA5",
+    "first_name": "Binura",
+    "surname": "Fernando",
+    "country": "Sri Lanka",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 269,
+    "set_no": 34,
+    "set_code": "FA5",
+    "first_name": "Md Shoriful",
+    "surname": "Islam",
+    "country": "Bangladesh",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 270,
+    "set_no": 34,
+    "set_code": "FA5",
+    "first_name": "Joshua",
+    "surname": "Little",
+    "country": "Ireland",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 271,
+    "set_no": 34,
+    "set_code": "FA5",
+    "first_name": "Obed",
+    "surname": "McCoy",
+    "country": "West Indies",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 272,
+    "set_no": 34,
+    "set_code": "FA5",
+    "first_name": "Billy",
+    "surname": "Stanlake",
+    "country": "Australia",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 273,
+    "set_no": 35,
+    "set_code": "UAL5",
+    "first_name": "R.S",
+    "surname": "Ambrish",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 274,
+    "set_no": 35,
+    "set_code": "UAL5",
+    "first_name": "Nikhil",
+    "surname": "Chaudhary",
+    "country": "Australia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 40
+  },
+  {
+    "list_sr_no": 275,
+    "set_no": 35,
+    "set_code": "UAL5",
+    "first_name": "Krains",
+    "surname": "Fuletra",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 276,
+    "set_no": 35,
+    "set_code": "UAL5",
+    "first_name": "Macneil",
+    "surname": "Noronha",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 277,
+    "set_no": 35,
+    "set_code": "UAL5",
+    "first_name": "R",
+    "surname": "Rajkumar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 278,
+    "set_no": 35,
+    "set_code": "UAL5",
+    "first_name": "Ninad",
+    "surname": "Rathva",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 279,
+    "set_no": 35,
+    "set_code": "UAL5",
+    "first_name": "Sunny",
+    "surname": "Sandhu",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 280,
+    "set_no": 35,
+    "set_code": "UAL5",
+    "first_name": "Shivalik",
+    "surname": "Sharma",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 281,
+    "set_no": 35,
+    "set_code": "UAL5",
+    "first_name": "Siddharth",
+    "surname": "Yadav",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 282,
+    "set_no": 35,
+    "set_code": "UAL5",
+    "first_name": "R.Sonu",
+    "surname": "Yadav",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 283,
+    "set_no": 36,
+    "set_code": "UFA5",
+    "first_name": "Waseem",
+    "surname": "Khanday",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 284,
+    "set_no": 36,
+    "set_code": "UFA5",
+    "first_name": "Atif",
+    "surname": "Mushtaq",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 285,
+    "set_no": 36,
+    "set_code": "UFA5",
+    "first_name": "Atal",
+    "surname": "Rai",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 286,
+    "set_no": 36,
+    "set_code": "UFA5",
+    "first_name": "C.Rakshann",
+    "surname": "Readdi",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 287,
+    "set_no": 36,
+    "set_code": "UFA5",
+    "first_name": "Manish",
+    "surname": "Reddy",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 288,
+    "set_no": 36,
+    "set_code": "UFA5",
+    "first_name": "Nishanth",
+    "surname": "Saranu",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 289,
+    "set_no": 36,
+    "set_code": "UFA5",
+    "first_name": "Deependra",
+    "surname": "Singh",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 290,
+    "set_no": 36,
+    "set_code": "UFA5",
+    "first_name": "Rajat",
+    "surname": "Verma",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 291,
+    "set_no": 36,
+    "set_code": "UFA5",
+    "first_name": "Rohit",
+    "surname": "Yadav",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 292,
+    "set_no": 37,
+    "set_code": "UAL6",
+    "first_name": "Emanjot",
+    "surname": "Chahal",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 293,
+    "set_no": 37,
+    "set_code": "UAL6",
+    "first_name": "Shubhang",
+    "surname": "Hegde",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 294,
+    "set_no": 37,
+    "set_code": "UAL6",
+    "first_name": "Bal",
+    "surname": "Krishna",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 295,
+    "set_no": 37,
+    "set_code": "UAL6",
+    "first_name": "Vihaan",
+    "surname": "Malhotra",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 296,
+    "set_no": 37,
+    "set_code": "UAL6",
+    "first_name": "Khilan",
+    "surname": "Patel",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 297,
+    "set_no": 37,
+    "set_code": "UAL6",
+    "first_name": "Delano",
+    "surname": "Potgieter",
+    "country": "South Africa",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 298,
+    "set_no": 37,
+    "set_code": "UAL6",
+    "first_name": "Hardik",
+    "surname": "Raj",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 299,
+    "set_no": 37,
+    "set_code": "UAL6",
+    "first_name": "Sarthak",
+    "surname": "Ranjan",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 300,
+    "set_no": 37,
+    "set_code": "UAL6",
+    "first_name": "Parth",
+    "surname": "Rekhade",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 301,
+    "set_no": 37,
+    "set_code": "UAL6",
+    "first_name": "Tiaan",
+    "surname": "Van Vuuren",
+    "country": "South Africa",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 302,
+    "set_no": 38,
+    "set_code": "UFA6",
+    "first_name": "Shreevatsha",
+    "surname": "Acharya",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 303,
+    "set_no": 38,
+    "set_code": "UFA6",
+    "first_name": "Sadek",
+    "surname": "Hussain",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 304,
+    "set_no": 38,
+    "set_code": "UFA6",
+    "first_name": "Shubham",
+    "surname": "Kapse",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 305,
+    "set_no": 38,
+    "set_code": "UFA6",
+    "first_name": "Aaqib",
+    "surname": "Khan",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 306,
+    "set_no": 38,
+    "set_code": "UFA6",
+    "first_name": "Sabir",
+    "surname": "Khan",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 307,
+    "set_no": 38,
+    "set_code": "UFA6",
+    "first_name": "Bayanda",
+    "surname": "Majola",
+    "country": "South Africa",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 308,
+    "set_no": 38,
+    "set_code": "UFA6",
+    "first_name": "Srihari",
+    "surname": "Nair",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 309,
+    "set_no": 38,
+    "set_code": "UFA6",
+    "first_name": "Brijesh",
+    "surname": "Sharma",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 310,
+    "set_no": 38,
+    "set_code": "UFA6",
+    "first_name": "Aman",
+    "surname": "Shekhawat",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 311,
+    "set_no": 39,
+    "set_code": "UAL7",
+    "first_name": "Himanshu",
+    "surname": "Bisht",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 312,
+    "set_no": 39,
+    "set_code": "UAL7",
+    "first_name": "Shreyan",
+    "surname": "Chakraborty",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 313,
+    "set_no": 39,
+    "set_code": "UAL7",
+    "first_name": "Kanishk",
+    "surname": "Chouhan",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 314,
+    "set_no": 39,
+    "set_code": "UAL7",
+    "first_name": "Mayank",
+    "surname": "Gusain",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 315,
+    "set_no": 39,
+    "set_code": "UAL7",
+    "first_name": "Akash",
+    "surname": "Pugazhanthi",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 316,
+    "set_no": 39,
+    "set_code": "UAL7",
+    "first_name": "Abhimanyusingh",
+    "surname": "Rajput",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 317,
+    "set_no": 39,
+    "set_code": "UAL7",
+    "first_name": "Shubham",
+    "surname": "Rana",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 318,
+    "set_no": 39,
+    "set_code": "UAL7",
+    "first_name": "Arpit",
+    "surname": "Rana",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 319,
+    "set_no": 39,
+    "set_code": "UAL7",
+    "first_name": "Maramreddy",
+    "surname": "Reddy",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 320,
+    "set_no": 39,
+    "set_code": "UAL7",
+    "first_name": "Sagar",
+    "surname": "Solanki",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 321,
+    "set_no": 40,
+    "set_code": "UAL8",
+    "first_name": "Aryaman Singh",
+    "surname": "Dhaliwal",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 322,
+    "set_no": 40,
+    "set_code": "UAL8",
+    "first_name": "Daksh",
+    "surname": "Kamra",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 323,
+    "set_no": 40,
+    "set_code": "UAL8",
+    "first_name": "Vishal",
+    "surname": "Mandwal",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 324,
+    "set_no": 40,
+    "set_code": "UAL8",
+    "first_name": "Arfaz",
+    "surname": "Mohammad",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 325,
+    "set_no": 40,
+    "set_code": "UAL8",
+    "first_name": "Hemang",
+    "surname": "Patel",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 326,
+    "set_no": 40,
+    "set_code": "UAL8",
+    "first_name": "Mridul",
+    "surname": "Surroch",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 327,
+    "set_no": 40,
+    "set_code": "UAL8",
+    "first_name": "Anuj",
+    "surname": "Thakral",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 328,
+    "set_no": 40,
+    "set_code": "UAL8",
+    "first_name": "Parth",
+    "surname": "Vats",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 329,
+    "set_no": 40,
+    "set_code": "UAL8",
+    "first_name": "Lalit",
+    "surname": "Yadav",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 330,
+    "set_no": 40,
+    "set_code": "UAL8",
+    "first_name": "Nitin Sai",
+    "surname": "Yadav",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 331,
+    "set_no": 41,
+    "set_code": "UAL9",
+    "first_name": "Krish",
+    "surname": "Bhagat",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 332,
+    "set_no": 41,
+    "set_code": "UAL9",
+    "first_name": "Prerit",
+    "surname": "Dutta",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 333,
+    "set_no": 41,
+    "set_code": "UAL9",
+    "first_name": "Sammar",
+    "surname": "Gajjar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 334,
+    "set_no": 41,
+    "set_code": "UAL9",
+    "first_name": "Nasir",
+    "surname": "Lone",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 335,
+    "set_no": 41,
+    "set_code": "UAL9",
+    "first_name": "Ishan",
+    "surname": "Mulchandani",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 336,
+    "set_no": 41,
+    "set_code": "UAL9",
+    "first_name": "Akhil",
+    "surname": "Scaria",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 337,
+    "set_no": 41,
+    "set_code": "UAL9",
+    "first_name": "Muhammed",
+    "surname": "Sharafuddeen",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 338,
+    "set_no": 41,
+    "set_code": "UAL9",
+    "first_name": "K.Ajay",
+    "surname": "Singh",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 339,
+    "set_no": 41,
+    "set_code": "UAL9",
+    "first_name": "Ritik",
+    "surname": "Tada",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 340,
+    "set_no": 41,
+    "set_code": "UAL9",
+    "first_name": "Luckyrajsinh",
+    "surname": "Vaghela",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 341,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Mohamed",
+    "surname": "Ali",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 342,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Madhav",
+    "surname": "Bajaj",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 343,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Akshu",
+    "surname": "Bajwa",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 344,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Varun Raj Singh",
+    "surname": "Bisht",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 345,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Rishabh",
+    "surname": "Chauhan",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 346,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Jack",
+    "surname": "Edwards",
+    "country": "Australia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 50
+  },
+  {
+    "list_sr_no": 347,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Dian",
+    "surname": "Forrester",
+    "country": "South Africa",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 348,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Dhurmil",
+    "surname": "Matkar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 349,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Shiva",
+    "surname": "Singh",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 350,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Parikshit",
+    "surname": "Valsangkar",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 351,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Mani Sankar",
+    "surname": "Mura Singh",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 352,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Virandeep",
+    "surname": "Singh",
+    "country": "Malaysia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 353,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Chama",
+    "surname": "Milind",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 354,
+    "set_no": 25,
+    "set_code": "UWK3",
+    "first_name": "K.L.",
+    "surname": "Shrijith",
+    "country": "India",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 355,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "Eathan",
+    "surname": "Bosch",
+    "country": "South Africa",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 356,
+    "set_no": 28,
+    "set_code": "AL4",
+    "first_name": "Chris",
+    "surname": "Green",
+    "country": "Australia",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 357,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Swastik",
+    "surname": "Chikara",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 358,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Rahul Raj",
+    "surname": "Namala",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 359,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Virat",
+    "surname": "Singh",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 360,
+    "set_no": 31,
+    "set_code": "UBA4",
+    "first_name": "Abhimanyu",
+    "surname": "Easwaran",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 361,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Tripuresh",
+    "surname": "Singh",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 362,
+    "set_no": 13,
+    "set_code": "WK2",
+    "first_name": "Kyle",
+    "surname": "Verreynne",
+    "country": "South Africa",
+    "role": "WICKETKEEPER",
+    "reserve_price_lakh": 125
+  },
+  {
+    "list_sr_no": 363,
+    "set_no": 34,
+    "set_code": "FA5",
+    "first_name": "Blessing",
+    "surname": "Muzarabani",
+    "country": "Zimbabwe",
+    "role": "BOWLER",
+    "reserve_price_lakh": 75
+  },
+  {
+    "list_sr_no": 364,
+    "set_no": 34,
+    "set_code": "FA5",
+    "first_name": "Ben",
+    "surname": "Sears",
+    "country": "New Zealand",
+    "role": "BOWLER",
+    "reserve_price_lakh": 150
+  },
+  {
+    "list_sr_no": 365,
+    "set_no": 38,
+    "set_code": "UFA6",
+    "first_name": "Rajesh",
+    "surname": "Mohanty",
+    "country": "India",
+    "role": "BOWLER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 366,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Swastik",
+    "surname": "Samal",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 367,
+    "set_no": 42,
+    "set_code": "UAL10",
+    "first_name": "Saransh",
+    "surname": "Jain",
+    "country": "India",
+    "role": "ALL-ROUNDER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 368,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Sooraj",
+    "surname": "Sangaraju",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  },
+  {
+    "list_sr_no": 369,
+    "set_no": 30,
+    "set_code": "UBA4",
+    "first_name": "Tanmay",
+    "surname": "Agarwal",
+    "country": "India",
+    "role": "BATTER",
+    "reserve_price_lakh": 30
+  }
+]
