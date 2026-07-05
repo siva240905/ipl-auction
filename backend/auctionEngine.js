@@ -257,7 +257,7 @@ async function handlePlayerSoldOrUnsold(roomCode, io) {
       updatedRoom.currentPlayerIndex += 1;
       
       // Check if auction is completed (e.g. out of players, or all teams filled)
-      const allFilled = updatedRoom.users.every(u => u.squad.length >= 11);
+      const allFilled = updatedRoom.users.every(u => u.squad.length >= 20);
       const poolFinished = updatedRoom.currentPlayerIndex >= updatedRoom.playersPool.length;
 
       if (poolFinished || allFilled) {

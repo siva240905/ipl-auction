@@ -56,8 +56,28 @@ export default function App() {
   const [selectedSquadFranchise, setSelectedSquadFranchise] = useState('');
   const [isAuctionPaused, setIsAuctionPaused] = useState(false);
   const [playingXI, setPlayingXI] = useState([]); // array of player ids
+  const [xiSlots, setXiSlots] = useState({
+    opener1: '',
+    opener2: '',
+    middle1: '',
+    middle2: '',
+    middle3: '',
+    middle4: '',
+    middle5: '',
+    bowler1: '',
+    bowler2: '',
+    bowler3: '',
+    bowler4: ''
+  });
   const [captainId, setCaptainId] = useState(null);
   const [viceCaptainId, setViceCaptainId] = useState(null);
+
+  useEffect(() => {
+    const list = Object.values(xiSlots).filter(id => id);
+    setPlayingXI(list);
+    if (captainId && !list.includes(captainId)) setCaptainId(null);
+    if (viceCaptainId && !list.includes(viceCaptainId)) setViceCaptainId(null);
+  }, [xiSlots, captainId, viceCaptainId]);
   const [activeSimulatingMatch, setActiveSimulatingMatch] = useState(null);
   const [showTrophy, setShowTrophy] = useState(false);
   const [simBallIdx, setSimBallIdx] = useState(0);
@@ -158,21 +178,72 @@ export default function App() {
     setEmail('');
   };
 
+  const handleSlotChange = (slotKey, value) => {
+    setXiSlots(prev => ({
+      ...prev,
+      [slotKey]: value
+    }));
+  };
+
+  const isPlayerSelectedInOtherSlot = (currentSlotKey, playerId) => {
+    return Object.entries(xiSlots).some(([key, val]) => key !== currentSlotKey && val === playerId);
+  };
+
   const togglePlayerInXI = (playerId) => {
-    setPlayingXI(prev => {
-      if (prev.includes(playerId)) {
-        const next = prev.filter(id => id !== playerId);
-        if (captainId === playerId) setCaptainId(null);
-        if (viceCaptainId === playerId) setViceCaptainId(null);
-        return next;
-      } else {
-        if (prev.length >= 11) {
-          alert("Starting XI is already full! Remove a player first.");
-          return prev;
+    // Check if player is already in XI
+    const currentSlot = Object.entries(xiSlots).find(([key, val]) => val === playerId);
+    if (currentSlot) {
+      // Remove from slot
+      const [slotKey] = currentSlot;
+      setXiSlots(prev => ({
+        ...prev,
+        [slotKey]: ''
+      }));
+    } else {
+      // Add to first empty slot
+      const myUser = room?.users?.find(u => u.username === username);
+      const player = myUser?.squad?.find(p => p.id === playerId);
+      if (!player) return;
+
+      let targetSlot = '';
+      if (player.role === 'Batsman' || player.role === 'Wicketkeeper') {
+        // Try openers first, then middle order
+        if (!xiSlots.opener1) targetSlot = 'opener1';
+        else if (!xiSlots.opener2) targetSlot = 'opener2';
+        else {
+          const emptyMiddle = ['middle1', 'middle2', 'middle3', 'middle4', 'middle5'].find(k => !xiSlots[k]);
+          if (emptyMiddle) targetSlot = emptyMiddle;
         }
-        return [...prev, playerId];
+      } else if (player.role === 'Bowler') {
+        // Try bowlers
+        const emptyBowler = ['bowler1', 'bowler2', 'bowler3', 'bowler4'].find(k => !xiSlots[k]);
+        if (emptyBowler) targetSlot = emptyBowler;
+      } else if (player.role === 'All-rounder') {
+        // Try middle order first, then bowlers
+        const emptyMiddle = ['middle1', 'middle2', 'middle3', 'middle4', 'middle5'].find(k => !xiSlots[k]);
+        if (emptyMiddle) targetSlot = emptyMiddle;
+        else {
+          const emptyBowler = ['bowler1', 'bowler2', 'bowler3', 'bowler4'].find(k => !xiSlots[k]);
+          if (emptyBowler) targetSlot = emptyBowler;
+        }
       }
-    });
+
+      // If no matching slot found, find any empty slot
+      if (!targetSlot) {
+        const allSlots = ['opener1', 'opener2', 'middle1', 'middle2', 'middle3', 'middle4', 'middle5', 'bowler1', 'bowler2', 'bowler3', 'bowler4'];
+        targetSlot = allSlots.find(k => !xiSlots[k]);
+      }
+
+      if (!targetSlot) {
+        alert("Starting XI is already full! Remove a player first.");
+        return;
+      }
+
+      setXiSlots(prev => ({
+        ...prev,
+        [targetSlot]: playerId
+      }));
+    }
   };
 
   const selectCaptain = (playerId) => {
@@ -1119,7 +1190,7 @@ export default function App() {
                 <div className="h-3 w-[1px] bg-pitch-border"></div>
                 <div className="flex items-center gap-1.5">
                   <span className="text-slate-400">SQUAD:</span>
-                  <span className="text-pitch-glow font-black font-accent">{myUserRecord ? myUserRecord.squad.length : '0'}/11</span>
+                  <span className="text-pitch-glow font-black font-accent">{myUserRecord ? myUserRecord.squad.length : '0'}/20</span>
                 </div>
               </div>
             )}
@@ -1536,7 +1607,7 @@ export default function App() {
                           ₹{u.budget.toFixed(2)} Cr
                         </p>
                         <p className="text-[9px] text-slate-400 uppercase tracking-wider">
-                          Squad: {u.squad.length}/11
+                          Squad: {u.squad.length}/20
                         </p>
                       </div>
                     </div>
@@ -2045,6 +2116,8 @@ export default function App() {
                     const overseasCount = xiPlayers.filter(p => p.isOverseas || (p.country && p.country !== 'India')).length;
                     const isXIValid = playingXI.length === 11 && wkCount >= 1 && batCount >= 3 && arCount >= 1 && bowlCount >= 3 && overseasCount <= 4 && captainId && viceCaptainId;
 
+                    const boughtPlayers = activeSquadRecord.squad.filter(p => p.boughtFor > 0);
+
                     return (
                       <div>
                         {/* Save & Share Action Bar */}
@@ -2086,7 +2159,7 @@ export default function App() {
                             <div className="bg-[#111322] border border-[#1e2136] rounded-2xl p-4 grid grid-cols-4 gap-2 mb-6 text-center">
                               <div>
                                 <span className="font-accent font-black text-blue-400 text-sm leading-none block">
-                                  {activeSquadRecord.squad.length}
+                                  {boughtPlayers.length}
                                 </span>
                                 <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider block mt-1 leading-none">
                                   Players
@@ -2094,7 +2167,7 @@ export default function App() {
                               </div>
                               <div>
                                 <span className="font-accent font-black text-purple-400 text-sm leading-none block">
-                                  {activeSquadRecord.squad.filter(p => p.isOverseas || (p.country && p.country !== 'India')).length}
+                                  {boughtPlayers.filter(p => p.isOverseas || (p.country && p.country !== 'India')).length}
                                 </span>
                                 <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider block mt-1 leading-none">
                                   Overseas
@@ -2121,10 +2194,10 @@ export default function App() {
                             {/* Bought Players List */}
                             <div>
                               <h5 className="text-[#10b981] font-bold text-[9px] uppercase tracking-wider mb-2 leading-none">
-                                Bought ({activeSquadRecord.squad.length})
+                                Bought ({boughtPlayers.length})
                               </h5>
                               <div className="space-y-2 select-none">
-                                {activeSquadRecord.squad.map((p) => {
+                                {boughtPlayers.map((p) => {
                                   const isPlayerOvs = p.isOverseas || (p.country && p.country !== 'India');
                                   return (
                                     <div 
@@ -2152,7 +2225,7 @@ export default function App() {
                             <div className="border-t border-[#1d2036] pt-4 mt-6 flex justify-between items-center">
                               <div>
                                 <p className="font-extrabold text-xs text-amber-400 tracking-tight leading-none mb-1">
-                                  playauctiongame.com
+                                  SIGMA LEAGUE
                                 </p>
                                 <p className="text-[8px] text-slate-400 font-semibold leading-none">
                                   Play your own IPL Auction with friends!
@@ -2167,10 +2240,120 @@ export default function App() {
 
                         {/* Interactive Manager Controls (Playing XI constraints validator for current user) */}
                         {isMySquad && (
-                          <div className="mb-6 p-4 bg-slate-950 border border-pitch-border rounded-xl">
-                            <h4 className="text-xs font-accent font-black text-pitch-glow uppercase tracking-widest mb-3">
-                              📋 STARTING PLAYING XI CONFIGURATION
-                            </h4>
+                          <div className="space-y-4 mb-6">
+                            {/* Slots builder panel */}
+                            <div className="p-5 bg-slate-950 border border-pitch-border rounded-xl space-y-4 text-left">
+                              <h4 className="text-xs font-accent font-black text-pitch-glow uppercase tracking-widest border-b border-pitch-border/50 pb-2 flex items-center gap-1.5">
+                                🏏 BUILD YOUR PLAYING XI SLOTS
+                              </h4>
+                              
+                              {/* Openers Section */}
+                              <div className="space-y-2">
+                                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Openers (2)</span>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                  <div>
+                                    <label className="block text-[9px] text-slate-500 font-bold mb-1 uppercase">Opener 1</label>
+                                    <select
+                                      value={xiSlots.opener1}
+                                      onChange={(e) => handleSlotChange('opener1', e.target.value)}
+                                      className="w-full bg-slate-900 border border-pitch-border rounded-lg px-3 py-2 text-xs text-white cursor-pointer focus:outline-none focus:border-pitch-glow"
+                                    >
+                                      <option value="">Select Opener 1...</option>
+                                      {activeSquadRecord.squad.map(p => (
+                                        <option 
+                                          key={p.id} 
+                                          value={p.id}
+                                          disabled={isPlayerSelectedInOtherSlot('opener1', p.id)}
+                                        >
+                                          {p.name} ({p.role}) - RTG: {p.rating}
+                                        </option>
+                                      ))}
+                                    </select>
+                                  </div>
+                                  
+                                  <div>
+                                    <label className="block text-[9px] text-slate-500 font-bold mb-1 uppercase">Opener 2</label>
+                                    <select
+                                      value={xiSlots.opener2}
+                                      onChange={(e) => handleSlotChange('opener2', e.target.value)}
+                                      className="w-full bg-slate-900 border border-pitch-border rounded-lg px-3 py-2 text-xs text-white cursor-pointer focus:outline-none focus:border-pitch-glow"
+                                    >
+                                      <option value="">Select Opener 2...</option>
+                                      {activeSquadRecord.squad.map(p => (
+                                        <option 
+                                          key={p.id} 
+                                          value={p.id}
+                                          disabled={isPlayerSelectedInOtherSlot('opener2', p.id)}
+                                        >
+                                          {p.name} ({p.role}) - RTG: {p.rating}
+                                        </option>
+                                      ))}
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              {/* Middle Order Section */}
+                              <div className="space-y-2">
+                                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Middle Order (5)</span>
+                                <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                                  {['middle1', 'middle2', 'middle3', 'middle4', 'middle5'].map((slotKey, idx) => (
+                                    <div key={slotKey}>
+                                      <label className="block text-[9px] text-slate-500 font-bold mb-1 uppercase">Slot {idx + 3}</label>
+                                      <select
+                                        value={xiSlots[slotKey]}
+                                        onChange={(e) => handleSlotChange(slotKey, e.target.value)}
+                                        className="w-full bg-slate-900 border border-pitch-border rounded-lg px-2 py-2 text-[10px] text-white cursor-pointer focus:outline-none focus:border-pitch-glow"
+                                      >
+                                        <option value="">Select...</option>
+                                        {activeSquadRecord.squad.map(p => (
+                                          <option 
+                                            key={p.id} 
+                                            value={p.id}
+                                            disabled={isPlayerSelectedInOtherSlot(slotKey, p.id)}
+                                          >
+                                            {p.name}
+                                          </option>
+                                        ))}
+                                      </select>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+
+                              {/* Bowlers Section */}
+                              <div className="space-y-2">
+                                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Bowlers (4)</span>
+                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                                  {['bowler1', 'bowler2', 'bowler3', 'bowler4'].map((slotKey, idx) => (
+                                    <div key={slotKey}>
+                                      <label className="block text-[9px] text-slate-500 font-bold mb-1 uppercase">Bowler {idx + 1}</label>
+                                      <select
+                                        value={xiSlots[slotKey]}
+                                        onChange={(e) => handleSlotChange(slotKey, e.target.value)}
+                                        className="w-full bg-slate-900 border border-pitch-border rounded-lg px-2 py-2 text-[10px] text-white cursor-pointer focus:outline-none focus:border-pitch-glow"
+                                      >
+                                        <option value="">Select...</option>
+                                        {activeSquadRecord.squad.map(p => (
+                                          <option 
+                                            key={p.id} 
+                                            value={p.id}
+                                            disabled={isPlayerSelectedInOtherSlot(slotKey, p.id)}
+                                          >
+                                            {p.name}
+                                          </option>
+                                        ))}
+                                      </select>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="p-4 bg-slate-950 border border-pitch-border rounded-xl">
+                              <h4 className="text-xs font-accent font-black text-pitch-glow uppercase tracking-widest mb-3">
+                                📋 STARTING PLAYING XI CONFIGURATION
+                              </h4>
                             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 text-center text-[10px] font-bold text-slate-400">
                               <div className={`p-2 rounded border ${playingXI.length === 11 ? 'border-pitch-glow text-pitch-glow' : 'border-slate-800 bg-slate-900/50'}`}>
                                 SELECTED: {playingXI.length} / 11
@@ -2205,10 +2388,11 @@ export default function App() {
                               </span>
                             </div>
                           </div>
-                        )}
+                        </div>
+                      )}
 
                         {/* List of squad players */}
-                        {activeSquadRecord.squad.length === 0 ? (
+                        {boughtPlayers.length === 0 ? (
                           <div className="p-8 text-center text-slate-500 italic text-xs">
                             No players bought by this franchise.
                           </div>
@@ -2220,7 +2404,7 @@ export default function App() {
                               </h4>
                             )}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                              {activeSquadRecord.squad.map((p) => {
+                              {boughtPlayers.map((p) => {
                                 const inXI = playingXI.includes(p.id);
                                 const isCapt = captainId === p.id;
                                 const isVC = viceCaptainId === p.id;
@@ -2864,7 +3048,7 @@ export default function App() {
 
       {/* FOOTER SECTION */}
       <footer className="glass-panel text-center py-3 border-t border-pitch-border text-xs text-slate-500">
-        🎮 MERN Stack real-time application using WebSockets (Socket.io) & fallback memory storage.
+        🎮 MERN Stack real-time application using WebSockets (Socket.io) & fallback memory storage.  -POWERED BY SIGMA
       </footer>
     </div>
   </div>
